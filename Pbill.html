@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>The Oberoi Udaivilas Hotel</title>
+<center><h1 style="color:red";>The Oberoi Udaivilas</h1></center>
+</head>
+<body style="background-color:Gray">
+<hr/>
+<h1 align="center">Payment</h1>
+<form>
+<br/>
+<br/><br/>
+Card No   -<input type="text" name="" id="1" size="16" maxlength="16" placeholder="">
+<br/>
+<br/>
+Expiry Date-<input type="text" name="" id="2" size="16" maxlength="5" placeholder=""> 
+<br/>
+<br/>
+Enter Password-<input type="password" name="" id="3" size="16" maxlength="4" placeholder="">
+<br/>
+<br/>  
+Enter Amount-<input type="text" name="" id="4" size="16" maxlength="5" placeholder="">
+<br/>
+<br/>  
+    <input type="submit" value="Submit" onclick="blue()">
+  </form>
+<script>
+function blue()
+{
+var a,b,c
+a=document.getElementById("1").value;
+a=number(a)
+b=document.getElementById("2").value;
+b=number(b)
+c=document.getElementById("3").value;
+c=number(c)
+if(a=1234567812345678 && b=1220 && c=1256)
+{
+window.alert("Payment Done.")
+home()
+}
+else
+{
+window.alert("Wrong Card No or Password or Expiry date.")
+log()
+}
+function log()
+{
+var myWindow = window.open("Pbill.html", "_self");
+}
+function home()
+{
+var myWindow = window.open("HMS.html", "_self");
+}
+}
+</script>
+</body>
+</html>

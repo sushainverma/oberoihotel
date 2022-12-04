@@ -1,0 +1,154 @@
+<html>
+<style>
+table,th,td
+{
+border:1px white;
+border-collapse:collapse;
+padding:12px;
+}
+th
+{
+text-align:center;
+}
+input[type=text], select {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color:Red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: yellow;
+}
+
+div {
+width: 40%;
+    border-radius: 0.5px;
+    background-color: brown;
+    padding: 2px;
+}
+</style>
+<table>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Overview.html">Oveview</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="ChiCho.html">Check In/Check Out</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Rates.html">Rates</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Menu.html">Menu</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Rooms.html">Rooms</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="HMS.html">Home</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Contact.html">Contact Us</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Review.html">Review</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+</table>
+<body style="background-color:orange">
+<br/>
+<center>
+<div>
+  <form action="insert.php" method="post">
+<br/>
+    <label for="fname">First Name</label>
+    <input type="text" id="1" name="firstname" required>
+<br/>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="2" name="lastname" required>
+<br/>
+
+    <label for="">New Password</label>
+    <input type="text" id="3" name="pass" required>
+<br/>
+
+    <label for="">Repeat Password</label>
+    <input type="text" id="4" name="rpass" required>
+<br/>
+
+    <label for="">Email.Id</label>
+    <input type="text" id="5" name="email" required>
+<br/>
+   
+ <center> 
+    <input type="submit" value="Submit" onclick="don()">
+</center>
+  </form>
+</div>
+</center>
+<script>
+function don()
+{
+var a,b,c,d,e
+a=document.getElementById("1").value;
+b=document.getElementById("2").value;
+c=document.getElementById("3").value;
+d=document.getElementById("4").value;
+e=document.getElementById("5").value;
+if(a!="" && b!="" && c!="" && d!="" && e!="")
+{
+if(c==d)
+{
+alert("Congratulations!Your ID has been created.")
+regn()
+}
+else
+{
+window.alert("PLEASE ENTER THE SAME PASSWORD")
+regn()
+}
+}
+else
+{
+window.alert("Please fill all fields.")
+regn()
+}
+function regn()
+{
+var myWindow = window.open("reg.html", "_self");
+}
+}
+
+</script>
+
+</body>
+</html>
+
